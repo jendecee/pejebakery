@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/38843893d5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peje Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            background-color: #E49393;
+            color:#245953
+        }
+
+        header a>img {
+            border-radius: 50%;
+            width: 150px;
+            position: absolute;
+            display: block;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    
+
+        nav {
+            font-size: xx-large;
+            margin:30px ;
+        }
+
+        nav a{
+            text-decoration: none;
+            padding-inline: 30px;
+        }
+
+        
+
+        input{
+            border-radius: 50px;
+            font-size: large;
+            width: 50%;
+            border-color: black;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            display: inline-block;
+        }
+
+        #item-list img {
+            width: 564px;
+            height: 846px;
+        }
+
+        #item-list, a~p {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: xx-large;
+        }
+
+        #banner p {
+            font-size: xx-large;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        main h2 {
+            border-style:double;
+            border-color: #D8D8D8;
+            padding: 10px;
+            margin: 50px;
+            font-size:70px;
+        }
+
+        #contact table {
+            margin-top: 70px;
+        }
+
+        #contact td {
+            font-size: x-large;
+            padding-inline: 60px;
+            line-height: 50px;
+        }
+
+        #contact td img{
+            width:200px;
+            border-radius: 50%;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <center>
+        <!--Main Header Section-->
+        <header>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <form action="processing.php" method="get" enctype="text/plain">
+                <input type="text" name="search_bar" placeholder="Looking for something sweet?">
+            </form>
+            <nav>
+                <div>
+                    <a href="">Cakes</a>
+                    &nbsp;
+                    <a href="">Biscuits</a>
+                    &nbsp;
+                    <a href="">Macarons</a>
+                    &nbsp;
+                   <a href="">Frozen Desserts</a>
+                    &nbsp;
+                    <a href="">Sales!</a>
+                    &nbsp;
+                </div>
+            </nav>
+        </header>
+        <!--Main Header Section-->
+        <br>
+        <!--Slider Section-->
+        <section id="banner">
+            <img src="img/banner.jpg" width="970" alt="banner">
+            <br>
+            <p><i>"Dream Bakers aims to offer high quality bakery
+                products at a competitive price to meet the demand
+                of middle to high income customers."</i></p>
+        </section>
+        <!--Slider Section-->
+        <br>
+        <!--Main Section-->
+        <main>
+            <!--First Section-->
+            <section>
+                <h2>Bestsellers Of The Month</h2>
+                <div>
+                    <table id="item-list">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="img/Fudgy Brownie.jpg" alt="Fudgy Brownie">
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <a href="product-order.html">
+                                                <h3>Fudgy Brownie</h3>
+                                            </a>
+                                            <p><strong>55.000</strong></p>
+                                        </center>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <img src="img/Browned Butter Chocolate.jpeg" alt="Browned Butter Chocolate">
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <a href="product-order.html">
+                                                <h3>Browned Butter Chocolate</h3>
+                                            </a>
+                                            <p><strong>55.000</strong></p>
+                                        </center>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <img src="img/Tiramisu.jpeg" alt="Tiramisu">
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <a href="product-order.html">
+                                                <h3>Tiramisu</h3>
+                                            </a>
+                                            <p><strong>55.000</strong></p>
+                                        </center>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="img/Paparoti.jpg" alt="Paparoti">
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <a href="product-order.html">
+                                                <h3>Paparoti</h3>
+                                            </a>
+                                            <p><strong>55.000</strong></p>
+                                        </center>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <img src="img/Chocolate Chip Cookies.jpeg" alt="Chocolate Chip Cookies">
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <a href="product-order.html">
+                                                <h3>Chocolate Chip Cookies</h3>
+                                            </a>
+                                            <p><strong>55.000</strong></p>
+                                        </center>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <img src="img/Egg Tart.jpeg" alt="Egg Tart">
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <a href="product-order.html">
+                                                <h3>Egg Tart</h3>
+                                            </a>
+                                            <p><strong>12.000</strong></p>
+                                        </center>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="img/Red Velvet Cake.jpeg" alt="Red Velvet Cake">
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <a href="prodcut-order.html">
+                                                <h3>Red Velvet Cake</h3>
+                                            </a>
+                                            <p><strong>100.000</strong></p>
+                                        </center>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <img src="img/caramel-cheesecake.jpg" alt="Caramel Cheesecake">
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <a href="product-order.html">
+                                                <h3>Caramel Cheesecake</h3>
+                                            </a>
+                                            <p><strong>100.000</strong></p>
+                                        </center>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <img src="img/Giant Macaron.jpg" alt="Giant Macaron">
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <a href="product-order.html">
+                                                <h3>Giant Macaron</h3>
+                                            </a>
+                                            <p><strong>50.000</strong></p>
+                                        </center>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!--First Section-->
+            <!--Second Section-->
+            <section id="contact">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="img/logo.png" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <a href="">Cakes</a>
+                                <br>
+                                <a href="">Biscuits</a>
+                                <br>
+                                <a href="">Macarons</a>                        
+                            </td>
+                            <td>
+                                <a href="">Frozen Desserts</a>
+                                <br>
+                                <a href="">Sales!</a>
+                            </td>
+                            <td>
+                                <h3>Contact Us</h3>
+                                <p>702 Nguyen Van Linh, District 7, Ho Chi Minh City
+                                <br>(+84) 28 3776 1369
+                                <br>
+                                <i class="fa-brands fa-instagram"></i><a href=""> peje.bakery</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!--Second Section-->
+        </main>
+        <!--Main Section-->
+        <!--Footer Area-->
+        <footer>
+            Sending love from Jen and Peter  ♡
+        </footer>
+        <!--Footer Area-->
+
+
+
+    </center>
+
+</body>
+</html>
