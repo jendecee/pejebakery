@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/38843893d5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peje Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#button").click(function(){
+        $(".container").hide();
+        $("#noti_send").show()
+  });
+});
+    </script>
+
+    <style>
+        * {
+            background-color: #E49393;
+            color:#245953
+        }
+
+        header a>img {
+            border-radius: 50%;
+            width: 150px;
+            position: absolute;
+            display: block;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    
+        nav {
+            font-size: xx-large;
+            margin:30px ;
+        }
+
+        nav a{
+            text-decoration: none;
+            padding-inline: 30px;
+        }
+
+        input#search{
+            border-radius: 50px;
+            font-size: large;
+            width: 50%;
+            border-color: black;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            display: inline-block;
+        }
+
+        #banner p {
+            font-size: xx-large;
+            padding: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: auto;
+            padding: 30px;
+            margin: 0px 50px 30px 50px;
+            font-size:70px;
+        }
+
+        #container {
+            box-sizing: border-box;
+        }
+
+        input[type=text], input[type=tel], textarea {
+            font-size: larger;
+            width: 90%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type=radio]#new {
+            font-size:2000px;
+        }
+
+        legend {
+            font-size: xx-large;
+        }
+
+        label {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: x-large;
+            padding: 12px 12px 12px 20px;
+            display: inline-block;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        .col25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col75 {
+            float: left;
+            width: 75%;
+            margin-top: 14px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+         input[type=submit] {
+            display: block;
+            font-weight: lighter;
+            box-sizing: border-box;
+            border-radius: 50px;
+            padding: 20px;
+            font-size: xx-large;
+            text-align: center;
+            margin: 40px auto;
+            border: 3px solid;
+         }
+
+         input[type=submit]:hover {
+            border-color:deeppink;
+            background-color: #ccc;
+            color: black;
+         }
+         .menu:hover{
+            border: 3px solid #E49393;
+            border-radius: 50px;
+            background-color: black;
+            color:white;
+            transition: 1s;
+         }
+
+        p {
+            color: rgb(0,400,0);
+        }
+
+        .col75 label {
+            padding: 0px;
+        }
+
+        input[type=checkbox] {
+            transform: scale(2);
+            margin: 15px;
+        }
+
+        input[type=number] {
+            float:right;
+            margin: 10px;
+            margin-right: 35%;
+            font-size: 14px;
+            width: 6%;
+            border: 1.5px solid;
+            border-radius: 5px;
+        }
+
+     
+
+    </style>
+
+
+</head>
+<body>
+    <center>
+        <!--Main Header Section-->
+        <header>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <form action="processing.php" method="get" enctype="text/plain">
+                <input type="text" id="search" name="search_bar" placeholder="Looking for something sweet? 🥨">
+            </form>
+            <nav>
+                <div>
+                    <a href="" class="menu">Cakes</a>
+                    &nbsp;
+                    <a href=""  class="menu">Biscuits</a>
+                    &nbsp;
+                    <a href="" class="menu">Macarons</a>
+                    &nbsp;
+                   <a href="" class="menu">Frozen Desserts</a>
+                    &nbsp;
+                    <a href="" class="menu">Sales!</a>
+                    &nbsp;
+                </div>
+            </nav>
+        </header>
+        <!--Main Header Section-->
+        <br>
+        <!--Slider Section-->
+        <section id="banner">
+            <img src="img/banner.jpg" width="970" alt="banner">
+            <br>
+            <p><i>"Peje Bakers aims to offer high quality bakery
+                products at a competitive price to meet the demand
+                of middle to high income customers."</i></p>
+        </section>
+        <!--Slider Section-->
+        <br>
+        <!--Main Section-->
+        <hr>
+    </center
+        <main>
+            <section>
+                <div> <h2>Order Product Form</h2>
+                    <p style="text-align: center;"> <code id="noti_send" style="display: none;font-size: 26px; color:white; padding-bottom: 50px; font-style: italic; ">Information has been sent</code></p>
+                
+                </div>
+               
+               
+                <form action="form-processing" method="post" id="item-list">
+                    <div class="container">
+                    <fieldset>
+                        <legend>Customer details</legend>
+                        <div class="row">
+                            <div class="col25">
+                                <label for="name">Name:</label>
+                            </div>
+                            <div class="col75">
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                        <div class="col25"><label for="address">Address:</label></div>
+                        <div class="col75"><input type="text" id="address" name="address" required></div>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                        <div class="col25"><label for="phone">Phone Number:</label></div>
+                        <div class="col75"><input type="tel" id="phone" name="phone" required></div>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                        <div class="col25"><label for="mail">Email:</label></div>
+                        <div class="col75"><input type="text" name="mail" id="mail"></div>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                        <div class="col25"><label  for="new">Rushed order:</label></div>
+                        <div class="col75">
+                            <input type="radio" name="new" id="new" value="yes">
+                            <span style="font-size: 25px;">yes</span>
+                            <input type="radio" name="new" id="new" value="no">
+                            <span style="font-size: 25px;">no</span>
+                            </div>
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <legend>Order details</legend>
+                        <div id="row">
+                            <div class="col25">
+                                <label for="item">Select Product(s)</label></div>
+                            <div class="col75">
+                                    <input type="checkbox" id="item1" name="item1 value="Brownie"> 
+                                    <label for="item1">Fudgy Brownie</label>
+                                    <input type="number" id="quantity" name="quantity" min="0">
+                                    <br>
+                                    <input type="checkbox" id="item2" name="item2" value="Chocolate"> <label for="item2">Browned Butter Chocolate</label> 
+                                    <input type="number" id="quantity" name="quantity" min="0">
+                                    <br>
+                                    <input type="checkbox" id="item3" name="item3" value="Tiramisu">
+                                    <label for="item3">Tiramisu</label>
+                                    <input type="number" id="quantity" name="quantity" min="0">
+                                    <br>
+                                    <input type="checkbox" id="item4" name="item4" value="Paparoti">
+                                    <label for="item4">Paparoti</label>
+                                    <input type="number" id="quantity" name="quantity" min="0">
+                                    <br>
+                                    <input type="checkbox" id="item5" name="item5" value="Cookies">
+                                    <label for="item5">Chocolate Chip Cookies</label>
+                                    <input type="number" id="quantity" name="quantity" min="0">
+                                    <br>
+                                    <input type="checkbox" id="item6" name="item6" value="Egg Tart">
+                                    <label for="item6">Egg Tart</label>
+                                    <input type="number" id="quantity" name="quantity" min="0">
+                                    <br>
+                                    <input type="checkbox" name="item7" id="item7">
+                                    <label for="item7">Red Velvet Cake</label>
+                                    <input type="number" name="quantity" id="quantity" min="0">
+                                    <br>
+                                    <input type="checkbox" name="item8" id="item8" value="Cheesecake">
+                                    <label for="item8">Caramel Cheesecake</label>
+                                    <input type="number" name="quantity" id="quantity" min="0">
+                                    <br>
+                                    <input type="checkbox" name="item9" id="item9" value="Macaron">
+                                    <label for="item9">Giant Macaron</label>
+                                    <input type="number" name="quantity" id="quantity" min="0">
+
+
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input id="button" type="submit" value="Submit">
+
+
+
+                    </div>
+                </form>
+            </section>
+
+        </main>
+</body>
+
+</html>
